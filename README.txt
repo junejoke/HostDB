@@ -56,6 +56,8 @@ Command:
     abw                 Add a domain to the black/white list
     mbw                 Modify a domain in the black/white list
     dbw                 Delete a black/white listed domain
+    hv                  Validate domains agains DNS (limits to 5000 max records per run)
+    hvr                 Validation report
 	
 Command ch [-ipaddr IPADDR] {host,dnsmasq,privoxy}
 
@@ -103,3 +105,8 @@ Command dbw domain
 
 positional arguments:
   domain      Domain to remove
+
+Command hv
+
+optional arguments:
+  -reset      Reset the validation flag on all Domains
